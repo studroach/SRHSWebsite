@@ -1,0 +1,144 @@
+
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf");
+}
+
+html {
+  margin: 0 8vw;
+  background-color: #d9d9d9;
+  font-family: arial;
+}
+
+body {
+  background-color: #ffffff;
+  /* padding: 4vh 6vw; */
+  margin: 0;
+  z-index: 0;
+}
+
+/* body.blur > *:not(.menu) :not(#barsIcon) {
+  filter: blur(3px);
+  transition: filter .5s ease-in-out;
+} */
+
+#bannerImg {
+  /* position: relative; */
+  width: 100%
+}
+
+#banner {
+
+}
+
+h1#title {
+  font-family: "Lobster";
+  font-size: 3em;
+  margin: 4vh 6vw;
+  width: 450px;
+  border-top: 8px solid #2ca859;
+  border-bottom: 8px solid #2ca859;
+}
+
+.subtitle {
+  font-size: .8em;
+}
+
+nav {
+  position: fixed;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  grid-column-gap: 2vw;
+  width: 100%;
+  height: 13vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(66, 66, 66, 0.6);
+  border-top: 1vh solid #8adaff;
+  border-bottom: 1vh solid #8adaff;
+  transition: top .5s cubic-bezier(.4, 0, .2, 1);
+  z-index: 10;
+}
+
+.navBtn {
+  border: none;
+  margin: 3vh 0;
+  flex-basis: 8%;
+  font-size: 1.5em;
+  background-color: transparent;
+}
+
+.navBtn:hover {
+  background-color: #8adaff;
+  border-radius: 15px;
+}
+
+#barsIcon {
+  font-size: 3em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  color: #8adaff;
+  background-color: #ffffff;
+  cursor: default;
+  user-select: none;
+  transition: top .5s cubic-bezier(.4, 0, .2, 1);
+  z-index: 10;
+}
+
+#barsIcon:hover {
+  background-color: #8adaff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+hr {
+  border: 4px solid #8adaff;
+}
+
+.body {
+  margin: 0 6vw;
+  padding-bottom: 10vh;
+  text-align: justify;
+  font-size: 1.2em;
+  color: #3d3d40;
+}
+
+#home {
+
+}
+
+#about {
+  display: none;
+}
+
+#services {
+  display: none;
+}
+
+.twoColumn {
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 20%;
+}
+
+.twoColumnPart {
+  flex-basis: 35%
+  justify-content: center;
+}
+
+#gallery {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #d9d9d9;
+}
