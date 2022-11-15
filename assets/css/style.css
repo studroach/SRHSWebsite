@@ -143,11 +143,17 @@ hr {
   background-color: #d9d9d9;
 }
 
+.gallerySection {
+  margin: 8vh 0 0 0;
+}
+
 .imageBox {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vh;
   grid-gap: 4%;
-  justify-content: center;
+  grid-row-gap: 2vh;
 }
 
 .galleryImg {
