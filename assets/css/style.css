@@ -36,12 +36,14 @@ h1#title {
   font-size: 3em;
   margin: 4vh 6vw;
   width: 450px;
-  border-top: 8px solid #2ca859;
-  border-bottom: 8px solid #2ca859;
+  border-top: 8px solid #606382;
+  border-bottom: 8px solid #606382;
+  /* text-align: center; */
 }
 
 .subtitle {
-  font-size: .8em;
+  font-size: .7em;
+  font-family: arial;
 }
 
 nav {
@@ -66,6 +68,7 @@ nav {
   margin: 3vh 0;
   flex-basis: 8%;
   font-size: 1.5em;
+  color: white;
   background-color: transparent;
 }
 
