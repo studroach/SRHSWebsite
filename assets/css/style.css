@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: "Lobster";
-    src: url("../fonts/Lobster-Regular.ttf");
+    font-family: "Quattrocento";
+    src: url("../fonts/Quattrocento-Bold.ttf");
 }
 
 html {
@@ -32,18 +32,18 @@ body {
 }
 
 h1#title {
-  font-family: "Lobster";
+  font-family: "Quattrocento";
   font-size: 3em;
   margin: 4vh 6vw;
-  max-width: 450px;
+  max-width: 550px;
   border-top: 8px solid #606382;
   border-bottom: 8px solid #606382;
   /* text-align: center; */
 }
 
 .subtitle {
+  font-family: "Quattrocento";
   font-size: .7em;
-  font-family: arial;
 }
 
 nav {
@@ -73,6 +73,7 @@ nav {
 }
 
 .navBtn:hover {
+  color: #000000;
   background-color: #8adaff;
   border-radius: 15px;
 }
@@ -132,6 +133,10 @@ hr {
   justify-content: center;
 }
 
+li:not(.imageSizer) {
+  text-align: left;
+}
+
 #gallery {
   display: none;
 }
@@ -173,4 +178,40 @@ hr {
 
 .imageSizer:last-child {
   flex-grow: 10;
+}
+
+input {
+  font-size: 1em;
+  width: 60%;
+  margin: 2vh 0;
+  padding: .5vw;
+  border: 2px solid #8adaff;
+  border-radius: 5px;
+}
+
+textarea {
+  font-size: 1em;
+  width: 60%;
+  margin: 2vh 0;
+  padding: .5vw;
+  height: 200px;
+  border: 2px solid #8adaff;
+  border-radius: 5px;
+}
+
+.subBtn {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 20%;
+  color: #ffffff;
+  background-color: #606382;
+  margin: 2vh 0;
+  padding: .5vw;
+  border-radius: 5px;
+  border: none;
+}
+
+.subBtn:hover {
+  color: #000000;
+  background-color: #8adaff;
 }
