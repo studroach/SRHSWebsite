@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
   </head>
   <body>
-    <nav class="menu">
-      <button class="navBtn" type="button" name="HomeBtn" id="homeBtn">Home</button>
-      <button class="navBtn" type="button" name="AboutBtn" id="aboutBtn">About</button>
-      <button class="navBtn" type="button" name="ServicesBtn" id="servicesBtn">Services</button>
-      <button class="navBtn" type="button" name="GalleryBtn" id="galleryBtn">Gallery</button>
-      <button class="navBtn" type="button" name="ContactBtn" id="contactBtn">Contact</button>
-    </nav>
+    <div class="menu">
+      <nav>
+        <button class="navBtn" type="button" name="HomeBtn" id="homeBtn">Home</button>
+        <button class="navBtn" type="button" name="AboutBtn" id="aboutBtn">About</button>
+        <button class="navBtn" type="button" name="ServicesBtn" id="servicesBtn">Services</button>
+        <button class="navBtn" type="button" name="GalleryBtn" id="galleryBtn">Gallery</button>
+        <button class="navBtn" type="button" name="ContactBtn" id="contactBtn">Contact</button>
+      </nav>
+      <i id="barsIcon" class="material-icons-outlined">menu</i>
+    </div>
+
     <div id="banner">
       <img src="assets/images/banner.png" alt="a remodeled kitchen" id="bannerImg">
       <h1 id="title">Superior Rejuvenation <br><span class="subtitle">Home Services</span></h1>
-      <!-- <i id="barsIcon" class="material-icons-outlined">menu</i> -->
     </div>
 
     <!-- Home -->
@@ -44,13 +47,28 @@
     <!-- Services -->
     <div class="body" id="services">
       <h2>Services</h2>
-      <h3>Scope of work Superior does:</h3>
-      <ul>
-        <li>Kitchen Remodeling</li>
-        <li>Bathroom Remodeling</li>
-        <li>Whole House Remodeling</li>
-        <li>Room Additions, ADU's, Decks, and Siding</li>
-      </ul>
+
+      <div id="serviceHeader">
+        <h3>Scope of work Superior does:</h3>
+        <div id="serviceBanner">
+
+          <div class="serviceItem">
+            <img src="assets/images/kitchenServices.png" alt="A lovely modern kitchen">
+            <h4 class="serviceName">Kitchen Remodels</h4>
+          </div>
+
+          <div class="serviceItem">
+            <img src="assets/images/bathroomServices.png" alt="A homey yet elegant bathroom">
+            <h4 class="serviceName">Bathroom Remodels</h4>
+          </div>
+
+          <div class="serviceItem">
+            <img src="assets/images/wholeHomeServices.png" alt="A modern home or additional dwelling unit">
+            <h4 class="serviceName">Whole House Remodels and ADUs</h4>
+          </div>
+
+        </div>
+      </div>
       <h2>Services Breakdown</h2>
       <hr>
       <div class="twoColumn">

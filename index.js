@@ -56,11 +56,9 @@ function menuToggle() {
     barsIcon.innerHTML = "close";
     barsIcon.style.top = "15vh"
     navCard.style.top = "0";
-    body.classList.toggle("blur");
   }else {
     barsIcon.innerHTML = "menu";
     navCard.style.top = "-15vh";
     barsIcon.style.top = "0";
-    body.classList.toggle("blur");
   }
 }
