@@ -1,7 +1,7 @@
 window.onload = function() {
 
-  // let barsIcon = document.getElementById("barsIcon");
-  // barsIcon.addEventListener("click", function(event){menuToggle();});
+  let barsIcon = document.getElementById("barsIcon");
+  barsIcon.addEventListener("click", function(event){menuToggle();});
 
   let homeBtn = document.querySelector('#homeBtn');
   let aboutBtn = document.querySelector('#aboutBtn');
@@ -21,44 +21,59 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = homeContent;
     activeSection.style.display = "block";
+    if(document.documentElement.clientWidth < 600) {
+      menuToggle()
+    }
   });
 
   aboutBtn.addEventListener('click', function(event){
     activeSection.style.display = "none";
     activeSection = aboutContent;
     activeSection.style.display = "block";
+    if(document.documentElement.clientWidth < 600) {
+      menuToggle()
+    }
   });
 
   servicesBtn.addEventListener('click', function(event){
     activeSection.style.display = "none";
     activeSection = servicesContent;
     activeSection.style.display = "block";
+    if(document.documentElement.clientWidth < 600) {
+      menuToggle()
+    }
   });
 
   galleryBtn.addEventListener('click', function(event){
     activeSection.style.display = "none";
     activeSection = galleryContent;
     activeSection.style.display = "block";
+    if(document.documentElement.clientWidth < 600) {
+      menuToggle()
+    }
   });
 
   contactBtn.addEventListener('click', function(event){
     activeSection.style.display = "none";
     activeSection = contactContent;
     activeSection.style.display = "block";
+    if(document.documentElement.clientWidth < 600) {
+      menuToggle()
+    }
   });
 
 };
 
 function menuToggle() {
   let navCard = document.querySelector("nav");
-  let body = document.querySelector("body");
+  let banner = document.querySelector(".menu");
   if(barsIcon.innerHTML === "menu"){
     barsIcon.innerHTML = "close";
-    barsIcon.style.top = "15vh"
-    navCard.style.top = "0";
+    banner.style.height = "300px"
+    navCard.style.display = "flex"
   }else {
     barsIcon.innerHTML = "menu";
-    navCard.style.top = "-15vh";
-    barsIcon.style.top = "0";
+    banner.style.height = "50px"
+    navCard.style.display = "none"
   }
 }
