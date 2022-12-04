@@ -17,7 +17,9 @@
         <button class="navBtn" type="button" name="GalleryBtn" id="galleryBtn">Gallery</button>
         <button class="navBtn" type="button" name="ContactBtn" id="contactBtn">Contact</button>
       </nav>
-      <i id="barsIcon" class="material-icons-outlined">menu</i>
+      <div id="barHolder">
+        <button id="barsIcon" class="material-icons-outlined">menu</button>
+      </div>
     </div>
 
     <div id="banner">
@@ -72,53 +74,43 @@
       <h2>Services Breakdown</h2>
       <hr>
       <div class="twoColumn">
-        <div class="twoColumnPart">
-          <h3>Bathroom Remodels</h3>
-            <ul>
-              <li>Shower and tub installation</li>
-              <li>New flooring: Tile, LVT, vinyl</li>
-              <li>New cabinetry</li>
-              <li>Countertops: granite, quarts</li>
-              <li>Painting</li>
-              <li>Trim</li>
-              <li>Hardware and fixture installation</li>
-            </ul>
-          <h3>Kitchen Remodel</h3>
-            <ul>
-              <li>Wall and soffit removal</li>
-              <li>Cabinetry installation</li>
-              <li>Flooring</li>
-              <li>Hardware and fixture installation</li>
-              <li>Framing and layout</li>
-            </ul>
-          <h3>Living Room</h3>
-            <ul>
-              <li>Flooring</li>
-              <li>Walls</li>
-              <li>Drywall installation and repair</li>
-              <li>Painting</li>
-            </ul>
-        </div>
-        <div class="twoColumnPart">
-          <h3>Bedroom</h3>
-            <ul>
-              <li>Flooring</li>
-              <li>Fixture installation and repair</li>
-              <li>Drywall, trim, painting</li>
-              <li>Shelves and bookcases</li>
-            </ul>
-          <h3>Dining Room</h3>
-            <ul>
-              <li>Flooring</li>
-              <li>Drywall</li>
-              <li>Trim and painting</li>
-            </ul>
-          <h3>Office</h3>
-            <ul>
-              <li>Shelving</li>
-              <li>Fixtures</li>
-              <li>Walls</li>
-            </ul>
+        <h3>Bathroom Remodels</h3>
+        <ul>
+          <li>Shower and tub installation</li>
+          <li>New flooring: Tile, LVT, vinyl</li>
+          <li>New cabinetry</li>
+          <li>Countertops: granite, quarts</li>
+          <li>Painting</li>
+          <li>Trim</li>
+          <li>Hardware and fixture installation</li>
+        </ul>
+
+        <h3>Kitchen Remodel</h3>
+        <ul>
+          <li>Wall and soffit removal</li>
+          <li>Cabinetry installation</li>
+          <li>Flooring</li>
+          <li>Hardware and fixture installation</li>
+          <li>Framing and layout</li>
+        </ul>
+
+        <h3>Whole House</h3>
+        <ul>
+          <li>Flooring</li>
+          <li>Walls</li>
+          <li>Drywall installation and repair</li>
+          <li>Trim and painting</li>
+          <li>Fixture installation and repair</li>
+          <li>Shelves and bookcases</li>
+        </ul>
+
+        <h3>Exterior</h3>
+        <ul>
+          <li>Siding</li>
+          <li>Fencing</li>
+          <li>Decking</li>
+        </ul>
+
         </div>
       </div>
     </div>
@@ -129,72 +121,52 @@
       <p>This portfolio gallery is still a work in progress. We appreciate your patience!</p>
 
       <h3 class="gallerySection">Kitchens</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/kitchen1.png" alt="kitchen" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/kitchen2.png" alt="kitchen" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/kitchen3.png" alt="kitchen" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
+      <div id="temp">
+        <div class="imageBox kitchens">
+          <img src="assets/images/thumbnails/kitchen1Thumb.png" alt="kitchen" class="galleryImg" loading="lazy">
+          <img src="assets/images/thumbnails/kitchen2Thumb.png" alt="kitchen" class="galleryImg" loading="lazy">
+          <img src="assets/images/thumbnails/kitchen3Thumb.png" alt="kitchen" class="galleryImg" loading="lazy">
+        </div>
+        <button class="material-icons-outlined imgLeft">chevron_left</button>
+        <button class="material-icons-outlined imgRight">chevron_right</button>
+      </div>
 
       <h3 class="gallerySection">Bathrooms</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/bath1.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath2.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath3.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath4.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath5.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath6.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath7.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath8.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bath9.png" alt="bathroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
+      <div class="imageBox bathrooms">
+        <img src="assets/images/thumbnails/bath1Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath2Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath3Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath4Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath5Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath6Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath7Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath8Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bath9Thumb.png" alt="bathroom" class="galleryImg" loading="lazy">
+      </div>
 
-      <h3 class="gallerySection">Flooring</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/flooring1.png" alt="flooring" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/flooring2.png" alt="flooring" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/flooring3.png" alt="flooring" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
+      <h3 class="gallerySection">Whole House</h3><hr>
+      <div class="imageBox wholeHouse">
+        <img src="assets/images/thumbnails/flooring1Thumb.png" alt="flooring" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/flooring2Thumb.png" alt="flooring" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/flooring3Thumb.png" alt="flooring" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bedAdd1Thumb.png" alt="bedroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/bedAdd2Thumb.png" alt="bedroom" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/misc2Thumb.png" alt="fireplace" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/misc1Thumb.png" alt="counter and flooring" class="galleryImg" loading="lazy">
+      </div>
 
-      <h3 class="gallerySection">Bedrooms</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/bedAdd1.png" alt="bedroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/bedAdd2.png" alt="bedroom" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
-
-      <h3 class="gallerySection">Decking</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/deck1.png" alt="decking" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/deck2.png" alt="decking" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/deck3.png" alt="decking" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/deck4.png" alt="decking" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/deck5.png" alt="decking" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
-
-      <h3 class="gallerySection">Fencing</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/fence1.png" alt="fencing" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/fence2.png" alt="fencing" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
-
-      <h3 class="gallerySection">Siding</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/siding1.png" alt="siding" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/siding2.png" alt="siding" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
-
-      <h3 class="gallerySection">Other Projects</h3><hr>
-      <ul class="imageBox">
-        <li class="imageSizer"><img src="assets/images/gallery/misc1.png" alt="counter and flooring" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"><img src="assets/images/gallery/misc2.png" alt="fireplace" class="galleryImg" loading="lazy"></li>
-        <li class="imageSizer"></li>
-      </ul>
+      <h3 class="gallerySection">Home Exterior</h3><hr>
+      <div class="imageBox exterior">
+        <img src="assets/images/thumbnails/deck1Thumb.png" alt="decking" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/deck2Thumb.png" alt="decking" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/deck3Thumb.png" alt="decking" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/deck4Thumb.png" alt="decking" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/deck5Thumb.png" alt="decking" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/fence1Thumb.png" alt="fencing" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/fence2Thumb.png" alt="fencing" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/siding1Thumb.png" alt="siding" class="galleryImg" loading="lazy">
+        <img src="assets/images/thumbnails/siding2Thumb.png" alt="siding" class="galleryImg" loading="lazy">
+      </div>
     </div>
 
     <!-- Contact -->

@@ -70,10 +70,8 @@ function menuToggle() {
   if(barsIcon.innerHTML === "menu"){
     barsIcon.innerHTML = "close";
     banner.style.height = "300px"
-    navCard.style.display = "flex"
   }else {
     barsIcon.innerHTML = "menu";
     banner.style.height = "50px"
-    navCard.style.display = "none"
   }
 }
