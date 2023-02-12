@@ -40,6 +40,7 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = homeContent;
     activeSection.style.display = "block";
+    window.scrollTo(0,0);
     if(document.documentElement.clientWidth < 600) {
       menuToggle()
     }
@@ -49,6 +50,7 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = aboutContent;
     activeSection.style.display = "block";
+    window.scrollTo(0,0);
     if(document.documentElement.clientWidth < 600) {
       menuToggle()
     }
@@ -58,6 +60,7 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = servicesContent;
     activeSection.style.display = "block";
+    window.scrollTo(0,0);
     if(document.documentElement.clientWidth < 600) {
       menuToggle()
     }
@@ -67,6 +70,7 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = galleryContent;
     activeSection.style.display = "block";
+    window.scrollTo(0,0);
     if(document.documentElement.clientWidth < 600) {
       menuToggle()
     }
@@ -76,12 +80,14 @@ window.onload = function() {
     activeSection.style.display = "none";
     activeSection = contactContent;
     activeSection.style.display = "block";
+    window.scrollTo(0,0);
     if(document.documentElement.clientWidth < 600) {
       menuToggle()
     }
   });
 
   function slideGallery(gallery, galleryNumber, right) {
+    let imageWidth = gallery[0].offsetWidth;
     if(right) {
       slidePosition[galleryNumber]++
       if(slidePosition[galleryNumber] > slidePosition[galleryNumber + 4]) {slidePosition[galleryNumber] = 0;}
@@ -90,7 +96,7 @@ window.onload = function() {
       if(slidePosition[galleryNumber] < 0) {slidePosition[galleryNumber] = slidePosition[galleryNumber + 4];}
     }
     gallery.forEach((slideImage) => {
-      slideImage.style.left = "-" + (512*slidePosition[galleryNumber]) + "px"
+      slideImage.style.left = "-" + (imageWidth*slidePosition[galleryNumber]) + "px"
     });
   }
 
