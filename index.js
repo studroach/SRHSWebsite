@@ -1,3 +1,5 @@
+let slidePosition;
+
 window.onload = function() {
 
   let barsIcon = document.getElementById("barsIcon");
@@ -14,6 +16,23 @@ window.onload = function() {
   let servicesContent = document.querySelector('#services');
   let galleryContent = document.querySelector('#gallery');
   let contactContent = document.querySelector('#contact');
+
+  let kitchenImages = document.querySelectorAll('#kitchenGallery img');
+  let bathroomImages = document.querySelectorAll('#bathroomGallery img');
+  let wholeHouseImages = document.querySelectorAll('#wholeHouseGallery img');
+  let exteriorImages = document.querySelectorAll('#exteriorGallery img');
+
+  slidePosition = [0, 0, 0, 0, 2, 8, 6, 8]
+
+  let imgLeftKitchen = document.querySelector('#imgLeftKitchen');
+  let imgLeftBathroom = document.querySelector('#imgLeftBathroom');
+  let imgLeftHouse = document.querySelector('#imgLeftHouse');
+  let imgLeftExterior = document.querySelector('#imgLeftExterior');
+  
+  let imgRightKitchen = document.querySelector('#imgRightKitchen');
+  let imgRightBathroom = document.querySelector('#imgRightBathroom');
+  let imgRightHouse = document.querySelector('#imgRightHouse');
+  let imgRightExterior = document.querySelector('#imgRightExterior');
 
   let activeSection = homeContent;
 
@@ -62,10 +81,54 @@ window.onload = function() {
     }
   });
 
+  function slideGallery(gallery, galleryNumber, right) {
+    if(right) {
+      slidePosition[galleryNumber]++
+      if(slidePosition[galleryNumber] > slidePosition[galleryNumber + 4]) {slidePosition[galleryNumber] = 0;}
+    }else {
+      slidePosition[galleryNumber]--
+      if(slidePosition[galleryNumber] < 0) {slidePosition[galleryNumber] = slidePosition[galleryNumber + 4];}
+    }
+    gallery.forEach((slideImage) => {
+      slideImage.style.left = "-" + (512*slidePosition[galleryNumber]) + "px"
+    });
+  }
+
+  imgRightKitchen.addEventListener('click', function(event){
+    slideGallery(kitchenImages, 0, true);
+  });
+
+  imgLeftKitchen.addEventListener('click', function(event){
+    slideGallery(kitchenImages, 0, false);
+  });
+
+  imgRightBathroom.addEventListener('click', function(event){
+    slideGallery(bathroomImages, 1, true);
+  });
+
+  imgLeftBathroom.addEventListener('click', function(event){
+    slideGallery(bathroomImages, 1, false);
+  });
+
+  imgRightHouse.addEventListener('click', function(event){
+    slideGallery(wholeHouseImages, 2, true);
+  });
+
+  imgLeftHouse.addEventListener('click', function(event){
+    slideGallery(wholeHouseImages, 2, false);
+  });
+
+  imgRightExterior.addEventListener('click', function(event){
+    slideGallery(exteriorImages, 3, true);
+  });
+
+  imgLeftExterior.addEventListener('click', function(event){
+    slideGallery(exteriorImages, 3, false);
+  });
+
 };
 
 function menuToggle() {
-  let navCard = document.querySelector("nav");
   let banner = document.querySelector(".menu");
   if(barsIcon.innerHTML === "menu"){
     barsIcon.innerHTML = "close";

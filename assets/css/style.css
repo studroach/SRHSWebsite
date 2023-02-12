@@ -93,6 +93,14 @@ nav {
   user-select: none;
 }
 
+.imgLeft {
+  left: 6vw;
+}
+
+.imgRight {
+  right: 6vw;
+}
+
 @media only screen and (min-width: 600px) {
   #barsIcon {
     display: none;
@@ -111,6 +119,14 @@ nav {
     display: flex;
     flex-direction: row;
     padding-top: 0;
+  }
+  
+  .imgLeft {
+    left: 20vw;
+  }
+  
+  .imgRight {
+    right: 20vw;
   }
 
 }
@@ -178,9 +194,17 @@ li:not(.imageSizer) {
   margin: 8vh 0 0 0;
 }
 
+.galleryContainer {
+  display: flex;
+  align-items: center;
+}
+
 .imageBox {
   position: relative;
+  max-width: 512px;
   margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -189,27 +213,24 @@ li:not(.imageSizer) {
   z-index: 0;
 }
 
-.kitchens {
-
-}
-
-.bathrooms {
-
-}
-
-.wholeHouse {
-
-}
-
-.exterior {
-
-}
-
 .galleryImg {
   max-width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+#bathroomGallery {
+
+}
+
+#wholeHouseGallery {
+
+}
+
+#exteriorGallery {
+
 }
 
 button.material-icons-outlined:not(#barsIcon) {
@@ -220,15 +241,7 @@ button.material-icons-outlined:not(#barsIcon) {
   background-color: rgba(66, 66, 66, 0.6);
   z-index: 1;
   font-size: 2em;
-  bottom: 1px;
-}
-
-.imgLeft {
-  left: 7vw;
-}
-
-.imgRight {
-  right: 7vw;
+  color: #ffffff;
 }
 
 /* Contact Section ////////////////////////////////////////*/
