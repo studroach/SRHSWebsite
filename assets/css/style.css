@@ -184,9 +184,6 @@ li:not(.imageSizer) {
 
 /* Gallery Section ////////////////////////////////////////*/
 #gallery {
-  /* display: none; */
-}
-#home {
   display: none;
 }
 
@@ -219,18 +216,6 @@ li:not(.imageSizer) {
   padding: 0;
   margin: 0;
   position: relative;
-}
-
-#bathroomGallery {
-
-}
-
-#wholeHouseGallery {
-
-}
-
-#exteriorGallery {
-
 }
 
 button.material-icons-outlined:not(#barsIcon) {
