@@ -94,6 +94,13 @@ nav {
   user-select: none;
 }
 
+#logo {
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  transition: height .5s ease-in-out, left .5s ease-in-out;
+}
+
 .body {
   margin: 0 6vw;
   font-size: 1em;
@@ -141,49 +148,6 @@ nav {
   margin-top: 0;
 }
 
-/* Desktop styling */
-@media only screen and (min-width: 600px) {
-  #barsIcon {
-    display: none;
-  }
-
-  .menu {
-    height: 13vh;
-  }
-
-  .navBtn {
-    margin: 3vh 0;
-    flex-basis: 8%;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    padding-top: 0;
-  }
-  
-  h1#title {
-    font-size: 3em;
-  }
-
-  .subtitle {
-    font-size: .5em;
-  }
-
-  .body {
-    font-size: 1.2em;
-  }
-
-  .imgLeft {
-    left: 20vw;
-  }
-  
-  .imgRight {
-    right: 20vw;
-  }
-
-}
-
 hr {
   border: 4px solid #9dcaed;
 }
@@ -227,6 +191,22 @@ hr#name {
 .serviceName {
   text-align: center;
   margin-bottom: 0;
+}
+
+#serviceMap {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#serviceMap > h2 {
+  margin-top: 0;
+}
+
+#serviceMap > img{
+  width: 70vw;
+  border: 2px solid #606382;
+  border-radius: 20px;
 }
 
 li:not(.imageSizer) {
@@ -350,4 +330,56 @@ textarea {
   width: 100%;
   height: 8vw;
   background-color: #d9d9d9;
+}
+
+/* Desktop styling */
+@media only screen and (min-width: 600px) {
+  #barsIcon {
+    display: none;
+  }
+
+  .menu {
+    height: 13vh;
+  }
+
+  .navBtn {
+    margin: 3vh 0;
+    flex-basis: 8%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+  }
+  
+  h1#title {
+    font-size: 3em;
+  }
+
+  .subtitle {
+    font-size: .5em;
+  }
+
+  #logo {
+    height: 13vh;
+    position: absolute;
+    left: 6vw;
+  }
+
+  .body {
+    font-size: 1.2em;
+  }
+
+  .imgLeft {
+    left: 20vw;
+  }
+  
+  .imgRight {
+    right: 20vw;
+  }
+
+  #serviceMap > img {
+    width: 50vw;
+  }
 }
