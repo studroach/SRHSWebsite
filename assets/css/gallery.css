@@ -1,0 +1,57 @@
+.gallerySection {
+    margin: 8vh 0 0 0;
+}
+  
+.galleryContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.imageBox {
+    position: relative;
+    max-width: 512px;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    transition: left .7s;
+    z-index: 0;
+    background: rgb(93,93,93);
+    background: -moz-linear-gradient(0deg, rgba(93,93,93,1) 0%, rgba(50,50,50,1) 25%, rgba(50,50,50,1) 75%, rgba(93,93,93,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(93,93,93,1) 0%, rgba(50,50,50,1) 25%, rgba(50,50,50,1) 75%, rgba(93,93,93,1) 100%);
+    background: linear-gradient(0deg, rgba(93,93,93,1) 0%, rgba(50,50,50,1) 25%, rgba(50,50,50,1) 75%, rgba(93,93,93,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5d5d5d",endColorstr="#5d5d5d",GradientType=1);
+}
+  
+.galleryImg {
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    border-radius: 10px;
+    transition: left 1s ease;
+}
+  
+button.material-icons-outlined:not(#barsIcon) {
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    background-color: rgba(66, 66, 66, 0.6);
+    z-index: 1;
+    font-size: 2em;
+    color: #ffffff;
+}
+  
+button.material-icons-outlined:not(#barsIcon):hover {
+    background-color: rgba(66, 66, 66, 1);
+}

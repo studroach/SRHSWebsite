@@ -63,15 +63,17 @@ nav {
   padding-top: 50px;
 }
 
-.navBtn {
+.navLink {
+  text-decoration: none;
+  margin: auto;
   border: none;
-  padding: 0 10px;
+  padding: 10px 15px;
   font-size: 1.5em;
   color: white;
   background-color: transparent;
 }
 
-.navBtn:hover {
+.navLink:hover {
   color: #000000;
   background-color: #9dcaed;
   border-radius: 15px;
@@ -116,7 +118,6 @@ nav {
 
 .banner {
   position: relative;
-  left: -6vw;
   width: 100%;
   padding: 50px 6vw;
   background-color: #606382;
@@ -157,123 +158,8 @@ hr#name {
   margin: 0;
 }
 
-/* About Section //////////////////////////////////////////*/
-#about {
-  display: none;
-}
-
-/* Service Section ////////////////////////////////////////*/
-#services {
-  display: none;
-}
-
-#services p {
-  margin-bottom: 50px;
-}
-
-#serviceHeader {
-  margin-bottom: 70px;
-}
-
-#serviceBanner {
-  position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 20px;
-}
-
-.serviceItem > img{
-  width: 100%;
-  border-radius: 10px;
-}
-
-.serviceName {
-  text-align: center;
-  margin-bottom: 0;
-}
-
-#serviceMap {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#serviceMap > h2 {
-  margin-top: 0;
-}
-
-#serviceMap > img{
-  width: 70vw;
-  border: 2px solid #606382;
-  border-radius: 20px;
-}
-
-li:not(.imageSizer) {
-  text-align: left;
-}
-
-/* Gallery Section ////////////////////////////////////////*/
-#gallery {
-  display: none;
-}
-
-.gallerySection {
-  margin: 8vh 0 0 0;
-}
-
-.galleryContainer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.imageBox {
-  position: relative;
-  max-width: 512px;
-  margin-top: 2vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  transition: left .7s;
-  z-index: 0;
-}
-
-.galleryImg {
-  left: 0;
-  max-width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  position: relative;
-  border-radius: 5px;
-  transition: left 1s ease;
-}
-
-button.material-icons-outlined:not(#barsIcon) {
-  position: absolute;
-  border: none;
-  border-radius: 10px;
-  padding: 0;
-  background-color: rgba(66, 66, 66, 0.6);
-  z-index: 1;
-  font-size: 2em;
-  color: #ffffff;
-}
-
-button.material-icons-outlined:not(#barsIcon):hover {
-  background-color: rgba(66, 66, 66, 1);
-}
-
 /* Contact Section ////////////////////////////////////////*/
-#contact {
-  display: none;
-}
+
 
 input {
   font-size: 1em;
