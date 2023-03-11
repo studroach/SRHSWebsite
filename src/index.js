@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////
-window.onload = function() {
+function indexInit() {
 
   let barsIcon = document.getElementById("barsIcon");
   barsIcon.addEventListener("click", function(event){menuToggle();});

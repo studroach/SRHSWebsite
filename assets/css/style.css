@@ -58,9 +58,10 @@ h1#title {
 
 nav {
   display: flex;
-  grid-gap: 20px;
+  grid-gap: 15px;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .navLink {
@@ -77,6 +78,7 @@ nav {
   color: #000000;
   background-color: #9dcaed;
   border-radius: 15px;
+  box-shadow: 0 0 5px black;
 }
 
 #barHolder {
@@ -119,6 +121,7 @@ nav {
 .banner {
   position: relative;
   width: 100%;
+  left: -6vw;
   padding: 50px 6vw;
   background-color: #606382;
   color: #ffffff;
@@ -141,7 +144,11 @@ nav {
 
 .bufferGap {
   width: 100%;
-  height: 6vw;
+  height: 4vw;
+}
+
+.heading {
+  margin: 0 6vw;
 }
 
 .callToAction {
@@ -151,6 +158,10 @@ nav {
 
 hr {
   border: 4px solid #9dcaed;
+}
+
+hr.hrCorrection {
+  margin: 0 6vw;
 }
 
 hr#name {
@@ -202,9 +213,11 @@ textarea {
 
 /* Review Cards ///////////////////////////////////////////*/
 .review {
+  max-width: 100%;
   border: 8px solid #9dcaed;
   border-radius: 30px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .review img {
@@ -213,8 +226,8 @@ textarea {
 
 /* End of Page ////////////////////////////////////////////*/
 .footer {
-  width: 100%;
-  height: 8vw;
+  /* width: 100%; */
+  margin: 0 6vw 8vw 6vw;
   background-color: #d9d9d9;
 }
 
@@ -237,6 +250,7 @@ textarea {
     display: flex;
     flex-direction: row;
     padding-top: 0;
+    padding-bottom: 0;
   }
   
   h1#title {

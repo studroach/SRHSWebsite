@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////
-window.onload = function() {
+function galleryInit() {
 
     let gallery = document.querySelectorAll('#gallery img');
 

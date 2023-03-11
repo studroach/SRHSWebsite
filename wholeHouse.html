@@ -27,11 +27,14 @@
         </div>
 
         <div id="banner">
-        <img src="assets/images/banner.png" alt="a remodeled kitchen" id="bannerImg">
-        <h1 id="title">Superior Rejuvenation <br><span class="subtitle">Home Services</span></h1>
+            <img src="assets/images/banner.png" alt="a remodeled kitchen" id="bannerImg">
+            <h1 id="title">Superior Rejuvenation <br><span class="subtitle">Home Services</span></h1>
         </div>
         
-        <h3 class="gallerySection">Whole House</h3><hr>
+        <div class="heading">
+            <h3 class="gallerySection">Whole House</h3><hr>
+        </div>
+
         <div class="galleryContainer">
             <button class="material-icons-outlined imgLeft" id="imgLeft">chevron_left</button>
             <div id="gallery" class="imageBox">
@@ -55,8 +58,10 @@
             <button class="material-icons-outlined imgRight" id="imgRight">chevron_right</button>
         </div>
 
-        <div class="callBanner">
-            <h4 class="callToAction">Expand your Dream</h4>
+        <div class="footer">
+            <div class="callBanner">
+                <h4 class="callToAction">Expand your Dream</h4>
+            </div>
         </div>
 
         <script>
@@ -64,6 +69,12 @@
         </script>
         <script src="src/index.js"></script>
         <script src="src/gallery.js"></script>
+        <script>
+            window.onload = function() {
+                indexInit();
+                galleryInit();
+            };
+        </script>
 
     </body>
 </html>

@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////
-window.onload = function() {
+function servicesInit() {
 
     let kitchen = document.getElementById("kitchen");
     let bathroom = document.getElementById("bathroom");

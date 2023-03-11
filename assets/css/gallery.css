@@ -11,9 +11,7 @@
 .imageBox {
     position: relative;
     max-width: 512px;
-    margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2vh auto;
     padding: 0;
     border-radius: 10px;
     display: flex;
@@ -54,4 +52,5 @@ button.material-icons-outlined:not(#barsIcon) {
   
 button.material-icons-outlined:not(#barsIcon):hover {
     background-color: rgba(66, 66, 66, 1);
+    box-shadow: 0 0 4px black;
 }
