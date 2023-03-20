@@ -19,23 +19,41 @@ body {
 }
 
 #bannerImg {
-  /* position: relative; */
+  content: url("../images/bannerMobile.png");
   width: 100%
 }
 
-h1#title {
+#title {
+  display: flex;
+  grid-gap: 10px;
   font-family: "Quattrocento";
-  font-size: 2em;
   margin: 4vh 6vw;
   max-width: 550px;
+  max-height: 140px;
   border-top: 8px solid #606382;
   border-bottom: 8px solid #606382;
-  /* text-align: center; */
 }
 
-.subtitle {
-  font-family: "Quattrocento";
-  font-size: .7em;
+#logoBox {
+  max-width: 64px;
+  padding-top: 4px;
+  margin: auto 0;
+}
+
+#logoBox > img {
+  width: 100%;
+}
+
+#titleBox > h1 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+#titleBox > h2 {
+  font-size: 1.2em;
+  margin-top: 4px;
+  margin-bottom: 15px;
 }
 
 .menu {
@@ -324,6 +342,10 @@ textarea {
   color: #9dcaed;
 }
 
+#footerNav > a:hover {
+  color: #474747;
+}
+
 /* Desktop styling */
 @media only screen and (min-width: 830px) {
   #barsIcon {
@@ -345,6 +367,10 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  #bannerImg {
+    content: url("../images/banner.png");
+  }
   
   h1#title {
     font-size: 3em;
@@ -358,6 +384,14 @@ textarea {
     height: 13vh;
     position: absolute;
     left: 6vw;
+  }
+
+  #titleBox > h1 {
+    margin-bottom: 8px;
+  }
+  
+  #titleBox > h2 {
+    margin-top: 8px;
   }
 
   #menuPhone {
