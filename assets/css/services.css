@@ -1,4 +1,4 @@
-p {
+#note {
     margin-bottom: 50px;
   }
   
@@ -10,7 +10,6 @@ p {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 20px;
 }
   
@@ -55,4 +54,12 @@ p {
 
 li:not(.imageSizer) {
     text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #serviceBanner {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
 }

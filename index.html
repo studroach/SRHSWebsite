@@ -14,7 +14,8 @@
         <!-- Nav -->
         <div class="menu">
             <img id="logo" src="assets/images/icon-logo/SRHomeServicesTrans.png" alt="Superior Rejuvenation Home Services Logo">
-            <nav>
+            <p id="menuPhone">(360)903-9838</p>
+            <nav id="mainNav">
                 <a class="navLink" href="index.html">Home</a>
                 <a class="navLink" href="about.html">About</a>
                 <a class="navLink" href="services.html">Services</a>
@@ -33,8 +34,9 @@
         <!-- Home -->
         <div class="body" id="home">
             <h2>Home</h2>
-            <p>Superior Rejuvenation Home Services offers its Northwest customers an array of remodel and new construction options.</p>
-            <p>We take pride in our work and believe any project is worth doing right the first time and using quality materials and expert craftsmanship. Our services provide an exceptional experience in terms of value, aesthetics and performance</p>
+            <p>Superior Rejuvenation Home Services offers its Northwest customers an array of remodel and new construction options. We can help you achieve your dream kitchen, make your bathroom a peacful and relaxing environment, or tackle any major home project you have.</p>
+            <p><b>We are decicated to improving the Greater Vancouver Area one home at a time!</b></p>
+            <p>We take pride in our work and believe any project is worth doing right the first time and using quality materials and expert craftsmanship. Our services provide an exceptional experience in terms of value, aesthetics and performance.</p>
             <p>We believe in listening to our customers' needs and vision while finding possitive solutions to problems. We are passionate about your next project!</p>
             <p>Let us help bring your vision to light.</p>
             <div class="bufferGap"></div>
@@ -48,14 +50,51 @@
                     <p>Superior Rejuvenation renovated my kitchen and bathroom with new flooring and counters. It was a challenging job as he had to replace sub-flooring in my 1920s house. He had to tailor make a place for my dishwasher as well. The owner Dan also put in walls, a ceiling, and flooring in an outdoor shed, turning it into a cozy and light-filled office space. He made large cedar flower boxes for the front windows, and subcontracted carpet installing on the second floor. I found working with Dan a delight, as he was honest, trustworthy, skilled, and efficient. I heartedly recomend Dan Brye as a contractor, for both large and small jobs!</p>
                 </div>
             </div>
+            <div id="actions">
+                <div id="contactAction" class="action">
+                    <h3 class="actionName">Contact Us</h3>
+                    <span class="actionIcon material-icons-outlined">contact_phone</span>
+                </div>
+                <div id="serviceAction" class="action">
+                    <h3 class="actionName">Our Services</h3>
+                    <span class="actionIcon material-icons-outlined">home_repair_service</span>
+                </div>
+                <div id="paymentAction" class="action">
+                    <h3 class="actionName">Make a Payment<br>(coming soon)</h3>
+                    <span class="actionIcon material-icons-outlined">payments</span>
+                </div>
+            </div>
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <div>
+                <div id="logo-name">
+                    <div>
+                        <img id="footerLogo" src="assets/images/icon-logo/SRHomeServicesTrans.png" alt="Superior Rejuvenation Home Services Logo">
+                    </div>
+                    <div id="footerName">
+                        <h2>Superior Rejuvenation</h2>
+                        <h3>Home Services</h3>
+                    </div>
+                </div>
+                <h2 id="phoneNumber">(360)903-9838</h2>
+                <p>General Contractor</p>
+                <p>CC SUPERRH787MK</p>
+            </div>
+            <nav id="footerNav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
 
         <script src="src/index.js"></script>
+        <script src="src/home.js"></script>
         <script>
             window.onload = function() {
                 indexInit();
+                homeInit();
             };
         </script>
 

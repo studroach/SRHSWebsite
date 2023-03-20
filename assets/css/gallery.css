@@ -11,7 +11,7 @@
 .imageBox {
     position: relative;
     max-width: 512px;
-    margin: 2vh auto;
+    margin: 2vh 6vw;
     padding: 0;
     border-radius: 10px;
     display: flex;
@@ -53,4 +53,20 @@ button.material-icons-outlined:not(#barsIcon) {
 button.material-icons-outlined:not(#barsIcon):hover {
     background-color: rgba(66, 66, 66, 1);
     box-shadow: 0 0 4px black;
+}
+
+/* Service List /////////////////////////////////////*/
+ul {
+    margin: 25px 8vw;
+    font-size: 1.3em;
+}
+
+li {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 750px) {
+    .imageBox {
+        margin: 2vh auto;
+    }
 }
