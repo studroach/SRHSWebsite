@@ -320,8 +320,12 @@ textarea {
   justify-content: space-around;
 }
 
+#footerNav > a {
+  color: #9dcaed;
+}
+
 /* Desktop styling */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 830px) {
   #barsIcon {
     display: none;
   }
@@ -359,7 +363,8 @@ textarea {
   #menuPhone {
     font-size: 26px;
     margin: 47px 0;
-    left: 200px;
+    margin-left: 120px;
+    left: 6vw;
   }
 
   .body {
