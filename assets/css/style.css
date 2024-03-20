@@ -56,7 +56,7 @@ body {
   margin-bottom: 15px;
 }
 
-.menu {
+#menu {
   position: fixed;
   padding-right: 5vw;
   width: 100%;
@@ -86,16 +86,43 @@ nav#mainNav {
   text-decoration: none;
   margin: auto;
   border: none;
+  border-radius: 15px;
   padding: 10px 15px;
   font-size: 1.5em;
   color: white;
   background-color: transparent;
+  transition: all .3s ease-in-out;
 }
 
 .navLink:hover {
   color: #000000;
   background-color: #9dcaed;
+  box-shadow: 0 0 5px black;
+}
+
+nav#subNav {
+  display: flex;
+  grid-gap: 15px;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.subNavLink {
+  text-decoration: none;
+  margin: auto;
+  border: none;
   border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 1.5em;
+  color: white;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+}
+
+.subNavLink:hover {
+  color: #000000;
+  background-color: #9dcaed;
   box-shadow: 0 0 5px black;
 }
 
@@ -222,6 +249,7 @@ hr#name {
   padding: 20px;
   border: 2px solid #ffffff;
   border-radius: 20px;
+  transition: all .25s ease-in-out;
 }
 
 .action:hover {
@@ -274,6 +302,7 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   border: none;
+  transition: all .25s ease-in-out;
 }
 
 .subBtn:hover {
@@ -340,6 +369,7 @@ textarea {
 
 #footerNav > a {
   color: #9dcaed;
+  transition: all .25s ease-in-out;
 }
 
 #footerNav > a:hover {
@@ -352,7 +382,7 @@ textarea {
     display: none;
   }
 
-  .menu {
+  #menu {
     height: 120px;
   }
 
@@ -366,6 +396,16 @@ textarea {
     flex-direction: row;
     padding-top: 0;
     padding-bottom: 0;
+    max-height: 120px;
+  }
+
+  nav#subNav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 120px;
   }
 
   #bannerImg {
